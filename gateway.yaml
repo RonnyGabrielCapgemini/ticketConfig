@@ -7,4 +7,8 @@ spring:
       - id: capticketuser
         uri: lb://user/
         predicates:
-          - Path=/product/**     
+          - Path=/user/**        
+      - id: capticketevent
+        uri: lb://event/
+        predicates:
+          - Path=/event/**   
