@@ -4,7 +4,7 @@ spring:
   cloud: 
    gateway: 
     routes:
-      - id: capticketuser
+      - id: user
         uri: lb://user/
         predicates:
           - Path=/user/**        
